@@ -1,0 +1,22 @@
+a) list the business requirements
+needs scalability - horizontal scalability - by adding servers we should be able to support more users/load on the server
+need to support structured, semi structured and unstructured data
+database should support agile methodology - should be schema-less, dynamic
+need good performance even when the load on the database increases
+
+b) compare different database categories
+should be schema-less, as the database required should support semi structured and unstructured data. also, schema design and updating schema/database for requirements takes time.
+Hence, RDBMS, ORDBMS, ODBMS and Columnar databases are ruled out.
+key-value and document types databases are good fit for this requirement
+
+c) Select a database from category which caters to the business needs
+key-value or document database suits the need. However, the document based database provides more flexibility. Key-value databases are too simple for storing application data.
+Mongodb is a popular document database and it is schema-less and has horizontal scalability. Hence, we can choose mongodb for out database.
+
+d) Install the database
+Installed MongoDB community edition as Windows Network Service
+Also, installed NoSqlClient and configured the same to connect to the installed MongoDB
+
+e) Explore the database
+listed the databases in the mongodb instance
+Used the find command to list all the documents in collection

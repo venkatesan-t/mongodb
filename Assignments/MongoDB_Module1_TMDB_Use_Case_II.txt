@@ -1,0 +1,129 @@
+mongodb commands
+create database
+use <new-databasename>
+create collection
+
+db.person.save({
+   "name": "David Attenborough",
+   "dob": "1926-05-08",
+   "birthCity": "London",
+   "birthCountry": "England"
+})
+
+db.person.save({
+   "name": "Vanessa Berlowitz",
+   "dob": "1966-08-18",
+   "birthCity": "Michigan",
+   "birthCountry": "The United States"
+})
+
+db.person.save({
+   "name": "James Brickell",
+   "dob": "1976-12-28",
+   "birthCity": "Boston",
+   "birthCountry": "The United States"
+})
+
+db.person.save({
+   "name": "Mateo Willis",
+   "dob": "1976-12-28",
+   "birthCity": "New York",
+   "birthCountry": "The United States"
+})
+
+db.person.save({
+   "name": "John Shier",
+   "dob": "1976-12-28",
+   "birthCity": "New York",
+   "birthCountry": "The United States"
+})
+
+db.person.save({
+   "name": "Jesha Klebe",
+   "dob": "1976-12-28",
+   "birthCity": "New York",
+   "birthCountry": "The United States"
+})
+
+db.person.save({
+   "name": "Jacob Shea",
+   "dob": "1976-12-28",
+   "birthCity": "New York",
+   "birthCountry": "The United States"
+})
+
+db.person.save({
+   "name": "Hans Zimmer",
+   "dob": "1976-12-28",
+   "birthCity": "New York",
+   "birthCountry": "The United States"
+})
+
+db.show.save({
+   "name":"Planet Earth II",
+   "producers": [{ "name": "Vanessa Berlowitz", "id": "5b94c09e09b93ef32f88217f" }, { "name": "James Brickell", "id": "5b94c11e09b93ef32f882180"}],
+   "directors": [{ "name": "Mateo Willis", "id": "5b94c14609b93ef32f882181" }, { "name": "John Shier", "id": "5b94c16409b93ef32f882182"}],
+   "creationDate": "2016/08/19",
+   "composers": [{ "name": "Jacob Shea", "id": "5b94c18709b93ef32f882183" }, { "name": "Jesha Klebe", "id": "5b94c1a409b93ef32f882184"},
+      { "name": "Hans Zimmer", "id": "5b94c1bf09b93ef32f882185"}],
+   "seasons": [{
+      "name": "Planet Earth II",
+      "releaseYear":2016,
+      "ratings":9.5,
+	  "episodes": [{
+	     "number": 1,
+		 "name": "Islands",
+		 "ratings": 8.1,
+		 "cast": [{
+            "name": "David Attenborough",
+			"id": "5b94c05109b93ef32f88217e",
+			"role": "presenter"
+         }],
+		 "crew": [{
+		    "name": "Vanessa Berlowitz",
+			"profession": "sound",
+			"id": "5b94c09e09b93ef32f88217f"
+		 }],
+		 "reviews": [{
+		    "user": "John",
+			"review": "What to say about Planet Earth II which has not already been said about so many other fantastic productions from BBC Nature?",
+			"totalViews": 102,
+			"foundUseful": 94
+		 }]
+	  }]
+   }]  
+})
+db.show.save({
+   "name":"Planet Earth",
+   "producers": [{ "name": "Vanessa Berlowitz", "id": "5b94c09e09b93ef32f88217f" }, { "name": "James Brickell", "id": "5b94c11e09b93ef32f882180"}],
+   "directors": [{ "name": "Mateo Willis", "id": "5b94c14609b93ef32f882181" }, { "name": "John Shier", "id": "5b94c16409b93ef32f882182"}],
+   "creationDate": "2006/04/12",
+   "composers": [{ "name": "Jacob Shea", "id": "5b94c18709b93ef32f882183" }, { "name": "Jesha Klebe", "id": "5b94c1a409b93ef32f882184"},
+      { "name": "Hans Zimmer", "id": "5b94c1bf09b93ef32f882185"}],
+   "seasons": [{
+      "name": "Planet Earth II",
+      "releaseYear":2006,
+      "ratings":9.4,
+	  "episodes": [{
+	     "number": 1,
+		 "name": "Islands",
+		 "ratings": 8.1,
+		 "cast": [{
+            "name": "David Attenborough",
+			"id": "5b94c05109b93ef32f88217e",
+			"role": "presenter"
+         }],
+		 "crew": [{
+		    "name": "Vanessa Berlowitz",
+			"profession": "sound",
+			"id": "5b94c09e09b93ef32f88217f"
+		 }],
+		 "reviews": [{
+		    "user": "John",
+			"review": "What to say about Planet Earth II which has not already been said about so many other fantastic productions from BBC Nature?",
+			"totalViews": 102,
+			"foundUseful": 94
+		 }]
+	  }]
+   }]  
+})
